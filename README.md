@@ -2,9 +2,9 @@
 
 ## Group Members
 
-1. Jay dabhi 
-2. JAsmine kaur
-3. dev choksi 
+- Jay Dabhi
+- Jasmine Kaur
+- Dev Choksi
 
 ## Project Description
 
