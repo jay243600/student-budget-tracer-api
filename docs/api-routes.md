@@ -18,8 +18,7 @@
 | POST | `/api/income` | Add a new income record |
 | GET | `/api/categories` | Get all spending categories |
 | GET | `/api/budget-summary` | Get total income, total expenses, and remaining balance |
-| GET | `/api/juicereport` | Required extra route from milestone instructions |
-| GET | `/api/juicereport/:id_juice` | Required extra route using `id_juice` |
+
 
 
 ## Small Explanation of Api-routes........!!!!!!!!!!!!!!!!
@@ -48,9 +47,3 @@ This route gets all spending categories. It helps organize expenses into groups 
 
 # GET `/api/budget-summary`
 This route gives the total income, total expenses, and remaining balance. It helps students understand their monthly budget.
-
-# GET `/api/juicereport`
-This route is included because the milestone instructions require a `juicereport` route.
-
-# GET `/api/juicereport/:id_juice`
-This route is included because the milestone instructions mention `id_juice`. It shows how an API can use an ID parameter.
