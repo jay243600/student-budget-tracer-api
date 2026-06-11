@@ -1,0 +1,29 @@
+{
+  "name": "student-budget-tracker",
+  "version": "1.0.0",
+  "description": "A simple Student Budget Tracker REST API using Node.js, TypeScript, and Express.",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [
+    "rest-api",
+    "typescript",
+    "express",
+    "student-budget"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  }
+}
