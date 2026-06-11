@@ -43,3 +43,13 @@ The API will manage:
 - Expenses
 - Categories
 - Monthly Budget
+
+Example student object:
+
+```json
+{
+  "id": 1,
+  "studentName": "Dev Patel",
+  "email": "devp55776@gmail.com",
+  "monthlyBudget": 1200
+}
