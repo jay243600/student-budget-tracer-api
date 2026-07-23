@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors";
+// import cors from "cors";
 
 import studentRoutes from "./routes/studentRoutes";
 import transactionsRoutes from "./routes/transactionsRoutes";
@@ -10,7 +10,7 @@ import savingsGoalRoutes from "./routes/savings-goalsRoutes";
 const app = express();
 const PORT = 3001;
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 
 app.get("/", (_req, res) => {
