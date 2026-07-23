@@ -1,0 +1,26 @@
+info:
+  name: Update Transaction
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3001/transactions/1
+  body:
+    type: json
+    data: |-
+      {
+        "student_id": 1,
+        "category_id": 4,
+        "amount": 30.00,
+        "transaction_type": "expense",
+        "transaction_date": "2026-07-21",
+        "description": "Updated lunch"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

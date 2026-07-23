@@ -1,0 +1,26 @@
+info:
+  name: Add Transaction
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3001/transactions
+  body:
+    type: json
+    data: |-
+      {
+        "student_id": 2,
+        "category_id": 4,
+        "amount": 25.50,
+        "transaction_type": "expense",
+        "transaction_date": "2026-07-21",
+        "description": "Lunch"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
