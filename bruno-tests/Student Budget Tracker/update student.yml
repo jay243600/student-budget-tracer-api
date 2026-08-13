@@ -1,0 +1,23 @@
+info:
+  name: update student
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3001/students/14
+  body:
+    type: json
+    data: |-
+      {
+        "full_name": "Updated Jay Student",
+        "email": "updatedjaystudent@example.com",
+        "college_name": "Conestoga College Waterloo"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

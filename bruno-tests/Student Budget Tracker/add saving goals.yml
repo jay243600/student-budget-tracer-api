@@ -1,11 +1,11 @@
 info:
-  name: Delete Transaction
+  name: add saving goals
   type: http
   seq: 1
 
 http:
-  method: DELETE
-  url: http://localhost:3001/transactions/1
+  method: POST
+  url: http://localhost:3001/savings-goals
   auth: inherit
 
 settings:

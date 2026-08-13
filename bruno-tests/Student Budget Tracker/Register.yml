@@ -1,0 +1,24 @@
+info:
+  name: Register
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3001/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "full_name": "Dev Choksi",
+        "email": "dev1login2@example.com",
+        "college_name": "Conestoga College",
+        "password": "dev123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

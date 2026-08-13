@@ -107,3 +107,44 @@ The backend uses parameterized SQL queries with `?` to safely send data to MySQL
 - Worked on category routes
 - Tested category API in Bruno
 - Explained how categories connect with transactions
+
+# delete   http://localhost:3001/transactions/1
+# put {
+  "student_id": 1,
+  "category_id": 4,
+  "amount": 30.00,
+  "transaction_type": "expense",
+  "transaction_date": "2026-07-21",
+  "description": "Updated lunch"
+}
+
+# post {
+  "student_id": 2,
+  "category_id": 4,
+  "amount": 25.50,
+  "transaction_type": "expense",
+  "transaction_date": "2026-07-21",
+  "description": "Lunch"
+}
+
+## Milestone 5.................!!!!!!!!!!!!!!!!!!!!
+
+In Milestone 5, we added authentication and a simple React frontend to the Student Budget Tracker project. Now users can login first, get a token, and then view protected API data from the backend.
+
+## Authentication.................!!!!!!!!!!!!!!!!!!!!
+
+The backend now has register and login routes.
+
+| Method | Route | Purpose |
+|---|---|---|
+| POST | /auth/register | Register a new student |
+| POST | /auth/login | Login student and get token |
+
+When a student registers, the password is hashed using bcrypt and saved in the `password_hash` column in the `students` table.
+
+When a student logs in, the API checks the email and password. If login is successful, the backend sends a JWT token.
+
+Protected API routes require this token in the request header:
+
+```txt
+Authorization: Bearer token_here

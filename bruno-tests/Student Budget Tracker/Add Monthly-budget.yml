@@ -1,11 +1,11 @@
 info:
-  name: Delete Transaction
+  name: Add Monthly-budget  
   type: http
   seq: 1
 
 http:
-  method: DELETE
-  url: http://localhost:3001/transactions/1
+  method: POST
+  url: http://localhost:3001/monthly-budgets
   auth: inherit
 
 settings:
